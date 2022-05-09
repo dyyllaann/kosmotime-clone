@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  /* font-family: 'Helvetica Neue',
+    sans-serif; */
+  font-family: 'Roboto Flex', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f6f7f9;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* BEGIN CODE FROM ORGINAL TODO APP */
+
+/* Notes: 
+ * Icons in the project directory and children of the Projects/Tags folder can have better margins.
+ */ 
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+
+  .header {
+    display: none;
+  }
+
+  #content {
+    height: 100vh;
+  }
+}
+
+* {
+  font-family: Assistant, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+
+dd {
+  color: #aaa;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+dt {
+  padding: 0 1rem 1rem 1rem;
+  color: rgb(77, 67, 117);
+  font-family: Helvetica, Arial;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+#tasks {
+  color: rgb(33, 21, 81);
+  grid-column-start: 2;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 16px);
+}
+
+h3 {
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3d3267;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3d3267;
+}
+
+tr, th, tbody {
+  width: 15vw;
+  text-align: left;
+}
+
+.active {
+  background-color: rgba(0,0,0,0.15);
+}
+
+.add-button {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.calendar {
+  background-color: #fff;
+  width: 17.5vw;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.05);
+  margin: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-label {
+  margin-left: 5px;
+  margin-right: auto;
+  font-size: 0.5rem !important;
+}
+
+.complete {
+  text-decoration: line-through;
+  text-decoration-color: #7864c2;
+  color: #aaa;
+}
+
+.header {
+  padding: 0 0.5%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon-right {
+  font-size: 0.9rem !important;
+  margin-left: auto;
+}
+
+.main > li {
+  font-weight: 600;
+  border: 1px #eee solid;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 2px 0;
+}
+
+.main > li:hover {
+    background-color: #fdfdfd;
+}
+
+.main-container {
+  flex: 2;
+  margin: 0 5vw;
+  overflow: scroll;
+}
+
+.material-icons.material-icons-outlined {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+
+.material-icons-outlined {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.material-icons {
+  font-size: 18px;
+  margin-right: 7.5px;
+}
+
+.menu-item {
+  color: #ddd;
+  cursor: default;
+  border-bottom: 2px solid rgb(100, 63, 219);
+  height: 100%;
+  padding: 0px 32px;
+  /* transition: border-bottom-color 400ms ease-in-out 0s; */
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project-title {
+  width: 100%;
+}
+
+.timegrid {
+  font-size: 0.75rem;
+  padding-bottom: 2.5vh;
+  color: #3d3267;
+  border-top: solid #eee 1px;
+}
+
+.visible {
+  display: block;
+}
+
+#add-new-project {
+  margin-left: 20.5px;
+}
+#calendarTable {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  height: 75vh;
+  width: 15vw;
+  overflow-y: auto;
+}
+
+#content {
+  box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.4 );
+  backdrop-filter: blur( 15px );
+  -webkit-backdrop-filter: blur( 15px );
+  background-color: #f7f8fa;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-radius: 10px;
+}
+
+#content > * {
+  height: 85vh;
+}
+
+#current-time {
+  position: absolute;
+  background-color: #6444db;
+  width: 100%;
+  height: 2px;
+}
+
+#down-arrow, #left-arrow {
+  margin-left: auto;
+}
+
+#input-title, #project-input-title {
+  width: 98%;
+  padding: 1%;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+
+#projects-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#projects-container > li {
+  display: flex;
+}
+
+#projects-container > li > * {
+  margin: auto;
+}
+
+#projects-container > li > div {
+  display: block;
+  margin-left: auto !important;
+}
+
+#sidebar {
+  width: 17.5vw;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-height: 100%;
+}
+
+#sidebar > li, h3 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* #tags:last-child {
+  margin-left: auto;
+} */
+
+#tags {
+  color: #D1C4E9;
+  cursor: default;
+}
+
+#tags > span {
+  transform: rotate(90deg);
+}
+
+#task-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #aaa;
+  cursor: pointer;
+  background-color: #f7f8fa;
+  border: 1px #eee solid;
+  transition: border 0.25s ease-in, color 0.25s ease-in;
+}
+
+#task-button:hover {
+  border: 1px #6444db solid;
+  color: #6444db;
+}
+
+#user-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.task-button-active {
+  background-color: #fff;
+}

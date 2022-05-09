@@ -1,0 +1,149 @@
+.menu-item {
+  color: #ddd;
+  cursor: pointer;
+  height: 100%;
+  padding: 0px 32px;
+  transition: border-bottom-color 400ms ease-in-out 0s;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  line-height: 24px;
+  position: relative;
+  user-select: none;
+  color: rgb(100, 63, 219);
+}
+
+.menu-item:hover {
+  color: rgb(100, 63, 219);
+}
+
+.menu {
+  height: 100%;
+  margin: 0;
+  border-bottom: 1px solid rgba(33, 21, 81, 0.08);
+}
+
+.menu > ul {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu > ul > li {
+  height: 100%;
+  padding: 0 32px;
+}
+
+.menu-item {
+  border-bottom: 2px solid rgb(100, 63, 219);
+}
+
+.nav {
+  height: 56px;
+  display: flex;
+  background-color: #fdfdfd;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .nav > * {
+  height: 100%;
+} */
+
+.nav--left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.focus-controls {
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  background-color: #f7f7fa;
+  padding: 4px 6px 4px 14px;
+  border-radius: 10px;
+  /* min-height: 40px; */
+}
+
+.focus-controls--title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-right: 16px;
+}
+
+.focus-controls--close-tab, .focus-controls--mute-mode {
+  display: flex;
+  color: #4d4375;
+  background-color: #fdfdfd;
+  border-radius: 7px;
+  margin: 2px;
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 6px 8px 6px 11px;
+}
+
+.focus-controls--close-tab > span,
+.focus-controls--mute-mode > span {
+  font-weight: 500;
+}
+
+.focus-controls--folder-icon {
+  margin-right: 10px;
+}
+
+.switch {
+  position: relative;
+  margin-left: 12px;
+  background-color: #eee;
+  transition: .4s;
+  width: 35px;
+  height: 20px;
+  border-radius: 34px;
+}
+
+.slider {
+  position: absolute;
+  bottom: 3px;
+  height: 14px;
+  left: 3px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #fefefe;
+}
+
+.tasks-icon {
+  width: 13px;
+  margin: 0 12px 2px 0;
+  stroke: rgb(100, 63, 219);
+}
+
+.nav--right {
+  display: flex;
+  align-items: center;
+}
+
+/* .nav--right {
+  height: 100%;
+} */
+
+#profile {
+  color: rgb(100, 63, 219);
+  font-size: 2.25rem;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+#help, #menu {
+  color: #b2aec2;
+  font-size: 1.3rem;
+  padding: 0 24px;
+  height: 100%;
+  border-left: 1px solid rgba(0,0,0,0.1);
+} 
