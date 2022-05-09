@@ -70,7 +70,8 @@ export default function TasksApp(props) {
 	return (
 		<div className="main-container" id="main">
 			<div className="main" id="task-list-title">
-				<h1 id="tasks">Tasks</h1>
+				{/* <h1 id="tasks">Tasks</h1> */}
+				<h1>{props.activeProject.projectTitle}</h1>
 				{taskElements}
 				{taskElements.length === 0 && (
 					<h3 id="defaultMessage">

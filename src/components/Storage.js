@@ -1,4 +1,4 @@
-import Project from "./tasks/Project-logic.js";
+import Project from "./tasks/Project.js";
 import Item from "./tasks/Todo-logic.js";
 import sampleData from "../sample-tasks.js";
 
@@ -13,10 +13,10 @@ function createDefaultItems() {
   Storage().set(new Project("Todo List 1", "12-12-2021"));
 
   // Set default Task
-  var testItem1 = new Item("Welcome to TaskEasy!");
+  var testItem1 = new Item("Welcome to KosmoTime (clone)!");
   testItem1.details.push(
-    "www.dylanjames.is",
-    "www.github.com/dylanjames",
+    "www.dylanarveson.com",
+    "www.github.com/dyyllaann",
     "← Check out the creator"
   );
 

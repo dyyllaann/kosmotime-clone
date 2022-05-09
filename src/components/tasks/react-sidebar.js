@@ -1,7 +1,6 @@
 import React from "react";
-import react, { useState } from "react";
 import Storage from "../Storage";
-import Project from "./Project-logic";
+import Project from "./Project";
 // import TasksApp from "./react-app";
 
 function TagsContainer() {

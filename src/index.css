@@ -78,6 +78,14 @@ dt {
   max-width: calc(100% - 16px);
 }
 
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: rgb(33, 21, 81);
+  font-weight: 500;
+  transform: scale(1, .9);
+}
+
 h3 {
   padding: 0.5em;
   font-size: 1rem;
@@ -165,6 +173,7 @@ tr, th, tbody {
   flex: 2;
   margin: 0 5vw;
   overflow: scroll;
+  padding-top: 22px;
 }
 
 .material-icons.material-icons-outlined {

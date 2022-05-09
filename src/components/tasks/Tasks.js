@@ -27,6 +27,8 @@ export default function Tasks() {
     setProjects((prevProjects) => projects.filter((project) => project.id !== projectId));
   }
 
+  const activeProject = projects[Storage().getActive()];
+
 	return (
 		<div id="content">
 			<Sidebar 
@@ -39,6 +41,7 @@ export default function Tasks() {
         active={active} 
         tasks={tasks}
         setTasks={setTasks}
+        activeProject={activeProject}
       />
 			<Calendar />
 		</div>
