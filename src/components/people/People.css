@@ -1,8 +1,0 @@
-#people--content {
-  display: flex;
-  flex-direction: column;
-}
-
-#people--add-contact {
-  width: 10vw;
-}
