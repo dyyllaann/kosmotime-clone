@@ -3,6 +3,11 @@
 import React, { Component } from 'react';
 import Menu from './components/navbar/Header-Menu';
 import Tasks from "./components/tasks/Tasks";
+import Storage from "./components/Storage";
+
+if (Storage().get() == null) {
+  Storage().init();
+}
 
 class App extends Component {
   constructor() {

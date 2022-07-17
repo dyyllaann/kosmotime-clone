@@ -3,25 +3,25 @@ import Item from "./tasks/Todo-logic.js";
 import sampleData from "../sample-tasks.js";
 
 // Set data const
-function createDefaultItems() {
-  console.log(`createDefaultItems(): Storage().get() = ${Storage().get()}`);
+// function createDefaultItems() {
+//   console.log(`createDefaultItems(): Storage().get() = ${Storage().get()}`);
 
-  // Create empty array
-  localStorage.setItem("projects", JSON.stringify([]));
+//   // Create empty array
+//   localStorage.setItem("projects", JSON.stringify([]));
 
-  // Set default Projects
-  Storage().set(new Project("Todo List 1", "12-12-2021"));
+//   // Set default Projects
+//   Storage().set(new Project("Todo List 1", "12-12-2021"));
 
-  // Set default Task
-  var testItem1 = new Item("Welcome to KosmoTime (clone)!");
-  testItem1.details.push(
-    "www.dylanarveson.com",
-    "www.github.com/dyyllaann",
-    "← Check out the creator"
-  );
+//   // Set default Task
+//   var testItem1 = new Item("Welcome to KosmoTime (clone)!");
+//   testItem1.details.push(
+//     "www.dylanarveson.com",
+//     "www.github.com/dyyllaann",
+//     "← Check out the creator"
+//   );
 
-  Storage().addTask(testItem1, 0);
-}
+//   Storage().addTask(testItem1, 0);
+// }
 
 export default function Storage() {
   const init = (function () {
