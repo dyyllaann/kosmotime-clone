@@ -1,5 +1,5 @@
-import Project from "./tasks/Project.js";
-import Item from "./tasks/Todo-logic.js";
+// import Project from "./tasks/Project.js";
+// import Item from "./tasks/Todo-logic.js";
 import sampleData from "../sample-tasks.js";
 
 // Set data const
